@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: cms_raw_data
+    database: purwadika
+    schema: jcdeol005_capstone3_eko_raw
+
+    tables:
+      - name: cms_claims_raw
+        description: "Raw data from MedicalClaimsSynthetic1M CSV"

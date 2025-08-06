@@ -1,2 +1,7 @@
 purwadika-502e43f1636d.json
 MedicalClaimsSynthetic1M.csv
+target/
+logs/
+dbt_packages/
+package-lock.yml
+packages.yml
