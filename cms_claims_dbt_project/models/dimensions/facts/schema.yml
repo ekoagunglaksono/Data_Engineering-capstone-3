@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: fct_claims
+    description: "Fact table for CMS medical claims"
+    columns:
+      - name: claim_id
+        tests:
+          - not_null
+          - unique
+      - name: beneficiary_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_patient')
+              field: beneficiary_id
+      - name: date_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+      - name: total_claim_cost
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 234313.0

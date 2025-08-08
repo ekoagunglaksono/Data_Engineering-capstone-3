@@ -21,4 +21,9 @@ models:
     +materialized: table
     staging:
       +materialized: view
-      
+      +schema: jcdeol005_capstone3_eko_staging
+    dimensions:
+      +schema: jcdeol005_capstone3_eko_model
+      facts:
+        +schema: jcdeol005_capstone3_eko_model
+    
