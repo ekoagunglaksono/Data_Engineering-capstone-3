@@ -26,4 +26,7 @@ models:
       +schema: jcdeol005_capstone3_eko_model
       facts:
         +schema: jcdeol005_capstone3_eko_model
+    marts: 
+      +schema: jcdeol005_capstone3_eko_mart
+      
     
