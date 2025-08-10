@@ -5,3 +5,4 @@ logs/
 dbt_packages/
 package-lock.yml
 packages.yml
+__pycache__/
